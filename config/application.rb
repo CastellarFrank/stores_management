@@ -21,5 +21,6 @@ module StoreManagement
     # config.i18n.default_locale = :de
 
     config.api_key = "mySecretPassword"
+    config.secret_key_base = '9e87e627ef9240a0ebbc873616585097f84857ecf9b5761eb8cd79a1142aa6fd1608eaa383d836aa85f2e9a196c11f861da4589879e22a581029b387034a7e96'
   end
 end
