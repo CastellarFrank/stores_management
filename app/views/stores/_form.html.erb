@@ -1,0 +1,27 @@
+<%= form_for(@store) do |f| %>
+    <%= render partial: 'shared/error_partial', locals: { object: @store } %>
+
+    <div class="row-form">
+        <div class="span3"><%= f.label :name %></div>
+        <div class="span9"><%= f.text_field :name %></div>
+    </div>
+
+    <div class="row-form">
+        <div class="span3"><%= f.label :address %></div>
+        <div class="span9"><%= f.text_area :address %></div>
+    </div>
+
+    <div class="row-form">
+        <div class="span3"><%= f.label :manager_name %></div>
+        <div class="span9"><%= f.text_field :manager_name %></div>
+    </div>
+
+    <div class="row-form">
+        <div class="span3"><%= f.label :telephone %></div>
+        <div class="span9"><%= f.text_field :telephone %></div>
+    </div>
+
+    <div class="row-form">
+        <%= f.submit(:class=> 'btn') %>
+    </div>
+<% end %>

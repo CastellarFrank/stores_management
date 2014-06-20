@@ -1,0 +1,38 @@
+<%= form_for(@product) do |f| %>
+    <%= render partial: 'shared/error_partial', locals: { object: @product } %>
+
+    <div class="row-form">
+        <div class="span3"><%= "Select Group: " %></div>
+        <div class="span9"><%= f.collection_select :group_id, Group.all,:id, :group_select_name, include_blank: false %></div>
+    </div>
+
+    <div class="row-form">
+        <div class="span3"><%= f.label :name %></div>
+        <div class="span9"><%= f.text_field :name %></div>
+    </div>
+
+    <div class="row-form">
+        <div class="span3"><%= f.label :description %></div>
+        <div class="span9"><%= f.text_area :description %></div>
+    </div>
+
+    <div class="row-form">
+        <div class="span3"><%= f.label :unit_price %><br></div>
+        <div class="span9"><%= f.number_field :unit_price, :class => 'text_field', :step => 'any' %></div>
+    </div>
+
+    <div class="row-form">
+        <div class="span3"><%= f.label :wholesale %><br></div>
+        <div class="span9"><%= f.number_field :wholesale, :class => 'text_field', :step => 'any' %></div>
+    </div>
+
+    <div class="row-form">
+        <div class="span3"><%= f.label :size %><br></div>
+        <div class="span9"><%= f.number_field :size, :class => 'text_field', :step => 'any' %></div>
+    </div>
+
+    <div class="row-form">
+        <%= f.submit(:class=> 'btn') %>
+    </div>
+
+<% end %>

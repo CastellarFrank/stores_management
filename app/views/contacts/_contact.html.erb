@@ -1,0 +1,6 @@
+
+<h3 style="display: inline">Title: </h3><p style="display: inline-block"><%= contact.title %></p>
+<i style="display: block"><%= formatted_message_date(contact.created_at) %></i>
+
+<h3>Message</h3>
+<textarea rows="5" cols="50" readonly="true"><%= contact.message %></textarea>

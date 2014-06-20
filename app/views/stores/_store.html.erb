@@ -1,0 +1,15 @@
+<tr>
+    <td><%= store.name %></td>
+    <td><%= store.address %></td>
+    <td><%= store.manager_name %></td>
+    <% if store.telephone.nil? %>
+        <td>&#060;Hasn't been seated&#062;</td>
+    <% else %>
+        <td><%= store.telephone %></td>
+    <% end %>
+    <td>
+        <%= link_to 'Edit', edit_store_path(store) %> |
+        <%= link_to 'Show', store %> |
+        <%= link_to 'Destroy', store, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </td>
+</tr>

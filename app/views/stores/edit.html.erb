@@ -1,0 +1,8 @@
+<h1>Edit Store</h1>
+
+<%= link_to 'Store Show', @store %> |
+<%= link_to 'Store Index', stores_path %> |
+<%= link_to 'Store Destroy', @store, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<br/><br/>
+<%= render 'form' %>

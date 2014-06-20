@@ -1,0 +1,26 @@
+<div class="row-fluid">
+    <div class="span12">
+        <div class="block">
+            <%= link_to 'Group Edit', edit_store_group_path(@store, @group) %> |
+            <%= link_to 'Store Show', @store %>
+
+            <%= render partial: 'shared/flash_partial'%>
+
+            <p>
+                <strong>Name:</strong>
+                <%= @group.name %>
+            </p>
+
+            <p>
+                <strong>Location:</strong>
+                <%= @group.location %>
+            </p>
+
+            <p>
+                <strong>Type:</strong>
+                <%= @group.type %>
+            </p>
+        </div>
+    </div>
+</div>
+

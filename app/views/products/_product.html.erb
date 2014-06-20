@@ -1,0 +1,11 @@
+<tr>
+    <td><%= group_name_by_id(product.group_id) %></td>
+    <td><%= product.name %></td>
+    <td><%= product.description %></td>
+    <td><%= product.unit_price %></td>
+    <td><%= product.wholesale %></td>
+    <td><%= product.size %></td>
+
+    <td><%= link_to 'Edit', edit_product_path(product) %> |
+        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %> </td>
+</tr>

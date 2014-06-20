@@ -1,0 +1,22 @@
+<div class="page-header">
+    <div class="icon">
+        <span class="ico-arrow-right"></span>
+    </div>
+    <h1>New Group<small>System</small></h1>
+</div>
+
+<div class="row-fluid">
+    <div class="span12">
+        <div class="block">
+            <%= link_to raw('<span class="icon-th icon-white"></span> Groups'), new_store_group_path(@store), :class=>'btn' %>
+        </div>
+    </div>
+</div>
+
+<div class="row-fluid">
+    <div class="span10">
+        <div class="block">
+            <%= render 'form' %>
+        </div>
+    </div>
+</div>

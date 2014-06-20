@@ -1,0 +1,7 @@
+<h1>Edit Product</h1>
+
+<%= link_to 'Cancel', products_path %> |
+<%= link_to 'Destroy Product', @product, method: :delete, data: { confirm: 'Are you sure?' } %>
+
+<br/><br/>
+<%= render 'form' %>
