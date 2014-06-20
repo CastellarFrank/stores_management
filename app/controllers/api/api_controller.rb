@@ -1,4 +1,4 @@
-class Api::ApiController < ApplicationController
+class Api::ApiController < ActionController::Base
   before_filter :check_token
 
   def check_token
