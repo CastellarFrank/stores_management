@@ -40,6 +40,9 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+gem "sprockets", "2.11.0"
+
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
