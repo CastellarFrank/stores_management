@@ -14,3 +14,16 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require_self
+
+jQuery(function($) {
+    $(document).on("ajax:success","#new_payment",function(e,data,status,xhr){
+        alert("curious");
+        $(".js_loan_payments").prepend(data);
+        $("#payment_amount").val("");
+    });
+
+    $(document).on("ajax:error","#new_payment",function(e, xhr, status, error){
+        alert("Something Wrong: " + xhr.responseText);
+    });
+});

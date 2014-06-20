@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link rel="icon" type="image/ico" href="favicon.ico"/>
 
     <title>StoreManagement</title>
 
-    <script type='text/javascript' src='/assets/plugins/jquery/jquery-1.11.1.min.js'></script>
-    <script type='text/javascript' src='/assets/plugins/jquery/jquery-ui-1.10.1.custom.min.js'></script>
-    <script type='text/javascript' src='/assets/plugins/jquery/jquery-migrate-1.2.1.min.js'></script>
+    <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper" data-no-turbolink>
 
     <div class="sidebar" style="min-height: 700px;">
 
@@ -148,49 +147,5 @@
 
 
 </div>
-
-<!--[if gt IE 8]>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<![endif]-->
-
-
-<!--[if lte IE 7]>
-<link href="/assets/ie.css" rel="stylesheet" type="text/css" />
-<script type='text/javascript' src='plugins/other/lte-ie7.js'></script>
-<![endif]-->
-
-<script type='text/javascript' src='/assets/plugins/jquery/globalize.js'></script>
-<script type='text/javascript' src='/assets/plugins/other/excanvas.js'></script>
-
-<script type='text/javascript' src='/assets/plugins/other/jquery.mousewheel.min.js'></script>
-
-<script type='text/javascript' src='/assets/plugins/bootstrap/bootstrap.min.js'></script>
-
-<script type='text/javascript' src='/assets/plugins/cookies/jquery.cookies.2.2.0.min.js'></script>
-
-<script type='text/javascript' src='/assets/plugins/jflot/jquery.flot.js'></script>
-<script type='text/javascript' src='/assets/plugins/jflot/jquery.flot.stack.js'></script>
-<script type='text/javascript' src='/assets/plugins/jflot/jquery.flot.pie.js'></script>
-<script type='text/javascript' src='/assets/plugins/jflot/jquery.flot.resize.js'></script>
-
-<script type='text/javascript' src='/assets/plugins/sparklines/jquery.sparkline.min.js'></script>
-
-<script type='text/javascript' src='/assets/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js'></script>
-
-<script type='text/javascript' src="/assets/plugins/uniform/jquery.uniform.min.js"></script>
-
-<script type='text/javascript' src='/assets/plugins/shbrush/XRegExp.js'></script>
-<script type='text/javascript' src='/assets/plugins/shbrush/shCore.js'></script>
-<script type='text/javascript' src='/assets/plugins/shbrush/shBrushXml.js'></script>
-<script type='text/javascript' src='/assets/plugins/shbrush/shBrushJScript.js'></script>
-<script type='text/javascript' src='/assets/plugins/shbrush/shBrushCss.js'></script>
-
-<script type='text/javascript' src='/assets/plugins/fancybox/jquery.fancybox.pack.js'></script>
-<script type='text/javascript' src='/assets/plugins.js'></script>
-<script type='text/javascript' src='/assets/charts.js'></script>
-
-<script type='text/javascript' src='/assets/actions.js'></script>
-<link href="/assets/stylesheets.css" rel="stylesheet" type="text/css" />
-
 </body>
 </html>
